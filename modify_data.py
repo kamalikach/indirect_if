@@ -14,7 +14,6 @@ output_file = "alpaca_eval_modified.json"
 with open("alpaca_eval.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
-data = data[:5]
 for example in data:
     original_instruction = example['instruction']
     print('***Original:***' + original_instruction)
